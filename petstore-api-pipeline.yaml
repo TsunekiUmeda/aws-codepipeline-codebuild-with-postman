@@ -132,8 +132,8 @@ Resources:
             - "s3:GetObjectVersion"
             - "s3:ListBucket"
             Resource:
-            - Fn::Sub: arn:aws:s3:::${AWS::StackName}-codepipeline-artifact-bucket-${AWS::AccountId}/*
-            - Fn::Sub: arn:aws:s3:::${AWS::StackName}-codepipeline-artifact-bucket-${AWS::AccountId}
+            - Fn::Sub: arn:aws:s3:::${AWS::StackName}-codepipeline-artifact-bucket2-${AWS::AccountId}/*
+            - Fn::Sub: arn:aws:s3:::${AWS::StackName}-codepipeline-artifact-bucket2-${AWS::AccountId}
             - Fn::Sub: arn:aws:s3:::${BucketRoot}/*
             - Fn::Sub: arn:aws:s3:::${BucketRoot}
           -
@@ -167,7 +167,7 @@ Resources:
     Properties:
       AccessControl: Private
       BucketName:
-        Fn::Sub: ${AWS::StackName}-codepipeline-artifact-bucket-${AWS::AccountId}
+        Fn::Sub: ${AWS::StackName}-codepipeline-artif-bucket-${AWS::AccountId}
       VersioningConfiguration:
         Status: Enabled
       Tags:
