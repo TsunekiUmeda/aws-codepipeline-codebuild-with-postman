@@ -167,7 +167,7 @@ Resources:
     Properties:
       AccessControl: Private
       BucketName:
-        Fn::Sub: ${AWS::StackName}-codepipeline-artif-bucket-${AWS::AccountId}
+        Fn::Sub: ${AWS::StackName}-codepipeline-arti-bucket-${AWS::AccountId}
       VersioningConfiguration:
         Status: Enabled
       Tags:
